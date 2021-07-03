@@ -1,0 +1,15 @@
+// Write a program to convert time to minute
+
+#include<stdio.h>
+int convertHrsMin(int,int);
+void main(){
+    int hrs,mins,total_mins;
+    printf("\n Enter hours and minutes: ");
+    scanf("%d %d",&hrs ,&mins);
+    total_mins = convertHrsMin(hrs,mins);
+    printf("\n Total minutes = %d",total_mins);
+}
+int convertHrsMin(int hours,int mins){
+    mins = hours * 60 + mins;
+    return mins;
+}
